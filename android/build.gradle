@@ -19,9 +19,13 @@ android {
     }
 }
 
+ext {
+	playServiceVersion = '10.0.1'
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile "com.android.support:appcompat-v7:23.0.1"
-    compile 'com.google.android.gms:play-services-auth:+'
+    compile "com.google.android.gms:play-services-auth:${playServiceVersion}"
     compile "com.facebook.react:react-native:+"
 }
